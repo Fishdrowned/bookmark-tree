@@ -45,22 +45,27 @@ The HTML Structures are:
 
 This example was modified from published review by eboyjr:
 
-    #tree {
-      padding: 3px;
-      background-color: #DFDFDF;
-      border: 1px solid #ACB4C4;
-    }
-    .title {
-      color: #002063;
-      display: inline-block;
-      -webkit-border-radius: 5px;
-      border: 1px solid #DFDFDF;
-      -webkit-transition-duration: .2s;
-    }
-    .title:hover {
-      background-color: #F2F4F7;
-      border: 1px solid #C7C7C7;
-    }
+```css
+#tree {
+  padding: 3px;
+  background-color: #DFDFDF;
+  border: 1px solid #ACB4C4;
+}
+.title {
+  color: #002063;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  border: 1px solid #DFDFDF;
+  -webkit-transition-duration: .2s;
+}
+.title:hover {
+  background-color: #F2F4F7;
+  border: 1px solid #C7C7C7;
+}
+```
+
+### How to build
+* Build in [Ubuntu](docs/ubuntu-compile.md)
 
 License
 -------

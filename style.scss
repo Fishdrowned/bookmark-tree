@@ -48,3 +48,15 @@ ul ul {
 .icon {
   display: inline;
 }
+
+/*
+w: 400; h: 550 (1920x1080)
+w: 400; h: 600 (2560x1440)
+f: sans-serif
+Custom Style:
+*/
+#tree{margin:0;overflow-y:auto;}
+.title{height:1.5em;line-height:1.5em;overflow:hidden;padding:3px;white-space:nowrap;}
+.title:hover{background-color:#eee;cursor:inherit;}
+#url{height:auto;max-height:2.6em;padding:3px;}
+li.bookmark{cursor:pointer;}
