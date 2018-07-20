@@ -1,0 +1,30 @@
+{
+  "name": "__MSG_BookmarkTree__",
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "default_locale": "en",
+  "version": "0.6.0",
+  "description": "__MSG_Description__",
+  "icons": {
+    "128": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "__MSG_BookmarkTree__",
+    "default_popup": "browser_action.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*" ],
+      "js": [ "content.js" ]
+    }
+  ],
+  "background": {"page": "background_page.html"},
+  "options_page": "options_page.html",
+  "permissions": [
+    "http://*/*",
+    "chrome://favicon/",
+    "bookmarks",
+    "tabs"
+  ]
+}
